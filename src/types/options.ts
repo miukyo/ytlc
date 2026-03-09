@@ -51,8 +51,9 @@ export interface YTLiveChatOptions {
  * @example
  * ```ts
  * chat.sendDummy({
- *   mode: "text",
- *   text: "local smoke test",
+ *   mode: "superchat",
+ *   amount: 9.99,
+ *   currency: "USD",
  *   authorName: "dev-bot",
  * });
  * ```
@@ -63,6 +64,12 @@ export interface SendDummyOptions {
 
   /** Optional text override for text-mode dummy messages. */
   text?: string;
+
+  /** Optional amount override for `superchat`/`sticker` dummy events. */
+  amount?: number;
+
+  /** Optional 3-letter currency code override (e.g. `USD`, `JPY`). */
+  currency?: string;
 
   /** Optional author name override for generated events. */
   authorName?: string;

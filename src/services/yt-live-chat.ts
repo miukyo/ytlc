@@ -58,6 +58,34 @@ const DUMMY_EMOJIS = [":rocket:", ":wave:", ":sparkles:", ":fire:", ":heart:"];
 
 const DUMMY_COLORS = ["4278190335", "4282664004", "4291521144", "4294967295", "4289449455"];
 
+const CURRENCY_SYMBOLS: Record<string, string> = {
+  USD: "$",
+  EUR: "EUR ",
+  GBP: "GBP ",
+  JPY: "JPY ",
+};
+
+const normalizeDummyAmount = (value: number | undefined): number => {
+  if (typeof value !== "number" || !Number.isFinite(value) || value <= 0) {
+    return Number((Math.random() * 99 + 1).toFixed(2));
+  }
+
+  return Number(value.toFixed(2));
+};
+
+const normalizeDummyCurrency = (value: string | undefined): string => {
+  if (!value || value.trim().length === 0) {
+    return "USD";
+  }
+
+  return value.trim().toUpperCase();
+};
+
+const toAmountString = (amount: number, currency: string): string => {
+  const symbolOrPrefix = CURRENCY_SYMBOLS[currency] ?? `${currency} `;
+  return `${symbolOrPrefix}${amount.toFixed(2)}`;
+};
+
 const toDummyAuthor = (nameOverride?: string): Author => {
   const name = nameOverride ?? pick(DUMMY_NAMES);
   return {
@@ -538,11 +566,12 @@ export class YTLiveChat
     }
 
     if (eventKind === "superchat" || eventKind === "sticker") {
-      const amount = Number((Math.random() * 99 + 1).toFixed(2));
+      const amount = normalizeDummyAmount(options.amount);
+      const currency = normalizeDummyCurrency(options.currency);
       baseItem.superchat = {
-        amountString: `$${amount.toFixed(2)}`,
+        amountString: toAmountString(amount, currency),
         amountValue: amount,
-        currency: "USD",
+        currency,
         bodyBackgroundColor: pick(DUMMY_COLORS),
         headerBackgroundColor: pick(DUMMY_COLORS),
         headerTextColor: "FFFFFFFF",
