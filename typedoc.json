@@ -1,0 +1,30 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": [
+    "src/services/yt-live-chat.ts",
+    "src/services/yt-http-client.ts",
+    "src/interfaces/i-yt-live-chat.ts",
+    "src/types/models.ts",
+    "src/types/options.ts",
+    "src/types/events.ts"
+  ],
+  "entryPointStrategy": "expand",
+  "out": "docs/reference",
+  "tsconfig": "tsconfig.json",
+  "plugin": [],
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "intentionallyNotExported": ["Listener"],
+  "groupOrder": [
+    "Classes",
+    "Interfaces",
+    "Type Aliases",
+    "Functions",
+    "Variables"
+  ],
+  "sort": ["kind", "source-order", "alphabetical"],
+  "categorizeByGroup": false,
+  "projectDocuments": ["docs/README.md"],
+  "name": "ytlc"
+}
