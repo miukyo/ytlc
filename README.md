@@ -25,7 +25,7 @@ Generated output: `docs/reference`
 
 ## Quick Start
 
-Look at reference docs for how to use it.
+Look at reference docs for how to use it. https://ytlc.pages.dev/
 
 ## Notes
 
