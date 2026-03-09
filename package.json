@@ -4,6 +4,14 @@
   "description": "Unofficial JavaScript library for reading YouTube live chat via InnerTube",
   "type": "module",
   "license": "MIT",
+  "homepage": "https://ytlc.pages.dev/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miukyo/ytlc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miukyo/ytlc/issues"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
