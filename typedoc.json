@@ -25,6 +25,5 @@
   ],
   "sort": ["kind", "source-order", "alphabetical"],
   "categorizeByGroup": false,
-  "projectDocuments": ["docs/README.md"],
   "name": "ytlc"
 }
