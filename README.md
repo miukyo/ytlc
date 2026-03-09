@@ -1,6 +1,6 @@
-# ytlc Library Guide
+# yt-lc Library Guide
 
-`ytlc` is a TypeScript/JavaScript library for receiving YouTube live chat events.
+`yt-lc` is a TypeScript/JavaScript library for receiving YouTube live chat events.
 
 ## YTLiveChat Service API
 
@@ -9,7 +9,7 @@ This library is centered on the `YTLiveChat` service.
 ### 1. Create service instance
 
 ```ts
-import { YTLiveChat } from "ytlc";
+import { YTLiveChat } from "yt-lc";
 
 const livechat = new YTLiveChat(options);
 ```
@@ -66,7 +66,7 @@ import type {
   SendDummyOptions,
   YTLiveChatOptions,
   YTLiveChatEvents,
-} from "ytlc";
+} from "yt-lc";
 ```
 
 Source references:
@@ -86,13 +86,13 @@ Most commonly used types:
 ## Install
 
 ```bash
-npm install ytlc
+npm install yt-lc
 ```
 
 ## Quick Start
 
 ```ts
-import { YTLiveChat } from "ytlc";
+import { YTLiveChat } from "yt-lc";
 
 const livechat = new YTLiveChat({ requestFrequency: 1000 });
 

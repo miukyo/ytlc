@@ -1,5 +1,5 @@
 {
-  "name": "ytlc",
+  "name": "yt-lc",
   "version": "0.1.0",
   "description": "Unofficial JavaScript library for reading YouTube live chat via InnerTube",
   "type": "module",
