@@ -1,7 +1,7 @@
-import { YTLiveChat } from "yt-lc";
+import { YTLiveChat } from "@miukyo/ytlc";
 
 // Usage:
-// 1) npm install yt-lc
+// 1) npm install @miukyo/ytlc
 // 2) set YT_HANDLE (e.g. @YouTubeChannelHandle) or YT_LIVE_ID
 // 3) node examples/nodejs-basic.mjs
 
