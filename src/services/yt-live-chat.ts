@@ -93,7 +93,7 @@ const toDummyAuthor = (nameOverride?: string): Author => {
     channelId: `UC_${Math.random().toString(36).slice(2, 18)}`,
     thumbnail: {
       type: "image",
-      url: `https://yt3.ggpht.com/${Math.random().toString(36).slice(2)}=s64-c-k-c0x00ffffff-no-rj`,
+      url: `https://yt3.ggpht.com/MNP0hHFQGsrpYCSw42fprx-RsLPWaVlEsyAj-q6fzHbgccgQ95AFhoCpHSNgJbsqVHSuhBJgLQ=s108-c-k-c0x00ffffff-no-rj`,
       alt: `${name} avatar`,
     },
   };
@@ -110,7 +110,7 @@ const toDummyMessage = (textOverride?: string): MessagePart[] => {
       {
         type: "emoji",
         emojiText: pick(DUMMY_EMOJIS),
-        url: "https://www.youtube.com/s/emoji/7ff574f2/emoji_u1f680.png",
+        url: "https://yt3.ggpht.com/cktIaPxFwnrPwn-alHvnvedHLUJwbHi8HCK3AgbHpphrMAW99qw0bDfxuZagSY5ieE9BBrA=w24-h24-c-k-nd",
         alt: pick(DUMMY_EMOJIS),
         isCustomEmoji: false,
       },
@@ -581,7 +581,7 @@ export class YTLiveChat
           eventKind === "sticker"
             ? {
                 type: "image",
-                url: "https://yt3.ggpht.com/super_sticker.webp",
+                url: "https://1.bp.blogspot.com/-L5EEP6irqNo/Xb_AxRYPYVI/AAAAAAAACUE/KVwBuP1Nyg8n5YYBf7Kdsbx5b-7E5ELIwCLcBGAsYHQ/s1600/1hippo.gif",
                 alt: "Super Sticker",
               }
             : undefined,

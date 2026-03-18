@@ -1,6 +1,6 @@
 {
   "name": "@miukyo/ytlc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial JavaScript library for reading YouTube live chat via InnerTube",
   "type": "module",
   "license": "MIT",
